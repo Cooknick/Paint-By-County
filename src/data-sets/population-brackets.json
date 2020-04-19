@@ -4,8 +4,12 @@
     "stepValue": 1
   },
   {
-    "stepId":2,
+    "stepId":1,
     "stepValue": 10000
+  },
+  {
+    "stepId":2,
+    "stepValue": 40000
   },
   {
     "stepId": 3,

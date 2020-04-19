@@ -4,7 +4,7 @@ import { stateBorders } from './state-borders';
 import populations from './data-sets/population.json';
 import brackets from './data-sets/population-brackets.json';
 import { findFullRegionName } from './data-finder/find-full-state-name';
-import colorSet from './color-set/sand-blue.json'
+import colorSet from './color-set/darkgreen-yellow.json'
 
 async function colorByBracket(countyList, setAllCounties) {
   let freshList;
@@ -44,7 +44,7 @@ export default function USMap({ hoverCounty, countyList }) {
       <svg width="989.97998" height="627.07001" version="1.0" id="svg2">
         <g id="counties" transform="translate(0,0.10698)" style={{ fill: 'Ivory', stroke: '#ffffff', strokeWidth: '0.17828999' }}>
           {allCounties.map(county => (
-            <path onMouseEnter={() => mouseCounty(county)} id={county.id} d={county.coordinates} style={{ stroke: "#000000", fill: county.id === activeCounty ? 'black' : county.color }}>
+            <path onMouseEnter={() => mouseCounty(county)} id={county.id} d={county.coordinates} style={{ stroke: "#000000", fill: county.id === activeCounty ? 'WhiteSmoke' : county.color }}>
               <title id="title10">{county.name}</title>
             </path>
           ))}
