@@ -1,0 +1,42 @@
+[
+  {
+    "stepId":0,
+    "stepValue": 1
+  },
+  {
+    "stepId":2,
+    "stepValue": 10000
+  },
+  {
+    "stepId": 3,
+    "stepValue": 100000
+  },
+  {
+    "stepId": 4,
+    "stepValue": 500000
+  },
+  {
+    "stepId": 5,
+    "stepValue": 1000000
+  },
+  {
+    "stepId": 6,
+    "stepValue": 2000000
+  },
+  {
+    "stepId": 7,
+    "stepValue": 400000
+  },
+  {
+    "stepId": 8,
+    "stepValue": 6000000
+  },
+  {
+    "stepId": 9,
+    "stepValue": 8000000
+  },
+  {
+    "stepId": 11,
+    "stepValue": 10000000
+  }
+]

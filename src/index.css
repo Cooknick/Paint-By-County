@@ -1,13 +1,64 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lato';
+  color: #333333;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.usMap {
+  flex: 2;
+}
+.sidebar {
+  padding: 10px;
+  flex: 1;
+  background: white;
+}
+.siteHeader {
+  font-weight: bolder;
+  font-size: 36px;
+  padding-bottom:7px;
+  margin-bottom: 20px;
+}
+.countyHeader {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.countyName{
+  font-size: 28px;
+}
+.stateName{
+  font-size: 22px;
+  color: #585858;
+}
+.dataSet {
+  margin-bottom: 20px;
+}
+.dataSetHeader {
+  font-size: 22px;
+  padding-bottom: 7px;
+}
+.dataItem {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.dataName {
+  font-weight: bold;
+}
+.dataValue {
+  font-weight: thin;
+  margin-left: 4px;
+}
+.byLine, a {
+  clear: both;
+  color: DimGray;
+  font-size: 14px;
+}
+.footnote {
+  color: grey;
+  font-size: 12px;
 }

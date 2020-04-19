@@ -1,12 +1,19 @@
-import React from 'react';
-import USMap from  './us-map';
-function App() {
+import React, { useState } from 'react';
+import USMap from './us-map';
+import SideBar from './side-bar/index';
+import { countyList } from './county-list';
+
+export default function App() {
+  const [selectedCounty, setSelectedCounty] = useState({ name: '' });
+
+  function hoverCounty(county) {
+    setSelectedCounty({ name: county });
+  }
+
   return (
     <div className="App">
-      <p>All The Counities in the US</p>
-      <USMap />
-    </div>  
+      <USMap hoverCounty={hoverCounty} countyList={countyList} />
+      <SideBar selectedCounty={selectedCounty} /> 
+    </div>
   );
 }
-
-export default App;
