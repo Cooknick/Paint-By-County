@@ -15,14 +15,14 @@ async function colorByBracket(countyList, setAllCounties) {
     let retainedStep = 1;
 
     brackets.forEach(step => {
-      if(step.stepValue < flatPopulation){
+      if (step.stepValue < flatPopulation) {
         retainedStep = step.stepId
       }
     })
-    
+
     return { ...county, color: colorSet[retainedStep] };
   })
-  
+
   setAllCounties(freshList);
 }
 
@@ -38,7 +38,7 @@ export default function USMap({ hoverCounty, countyList }) {
     hoverCounty(county.name);   // sets county data to sidebar
     setActiveCounty(county.id);
   }
-  
+
   return (
     <div className="usMap">
       <svg width="989.97998" height="627.07001" version="1.0" id="svg2">

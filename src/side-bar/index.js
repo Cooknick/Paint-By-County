@@ -25,7 +25,7 @@ export default function SideBar({ selectedCounty }) {
             {/* <ClimateData countyName={countyName} stateName={stateName} /> */}
 
             <span className="byLine">Designed and Developed by <a href="https://twitter.com/mikecooknick">Mike Cooknick</a></span><br />
-            <span className="footnote">Source: United States Census Bureau's 2018 American Community Survey </span>
+            <span className="footnote">Population Data Source: United States Census Bureau's 2018 American Community Survey </span>
             <span className="footnote">This product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau.</span>
         </div>
     )
