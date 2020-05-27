@@ -2,4 +2,4 @@ function maskNumber(population = '0'){
     return parseInt(population).toLocaleString();
 }
 
-export { maskNumber }
+export { maskNumber as default }
