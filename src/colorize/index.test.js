@@ -64,7 +64,7 @@ describe('colorizeCounties', () => {
         const result = await colorizeCounties(countyList, dataGuide, ['Population'] );
         expect(result).toEqual(expect.arrayContaining([
             {
-                color: 'rgb(82, 82, 103)',
+                color: 'rgb(71, 67, 73)',
                 ...countyList[0]
             }
         ]))
@@ -73,7 +73,7 @@ describe('colorizeCounties', () => {
         const result = await colorizeCounties(countyList, dataGuide, ['Population'] );
         expect(result).toEqual(expect.arrayContaining([
             {
-                color: 'rgb(82, 82, 103)',
+                color: 'rgb(71, 67, 73)',
                 ...countyList[0]
             }
         ]))

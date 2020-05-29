@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import colorSet from '../color-set/darkgreen-yellow.json'
+import colorSet from '../color-set/blue-yellow.json'
 
 export function getCountyValue(county, selectedData){
     switch(selectedData[0]){

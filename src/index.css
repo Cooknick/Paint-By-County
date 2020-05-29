@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  font-family: 'Lato';
-  color: #333333;
+  font-family: proxima-nova, sans-serif;
+  color: white;
+  background-color: #041045;
 }
 .App {
   display: flex;
@@ -14,20 +15,25 @@ body {
 }
 .mappedCounty{
   cursor: pointer;
+  box-shadow: 0 0 30px rgba(47, 69, 160, 0.44);
 }
 .mappedCounty:hover {
   fill: white !important;
 }
 .sidebar {
-  padding: 30px;
-  padding-top: 10%;
+  padding: 0px 30px 0px;
+  margin-right: 30px;
   flex: 1;
-  height: 100vh;
-  background: white;
+  height: 600px;
+  background: #0B1C69;
+  border: 1px solid #314080;
+  box-shadow: 0 0 30px rgba(47, 69, 160, 0.44);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .siteHeader {
-  font-weight: bolder;
-  font-size: 28px;
+  font-size: 24px;
   padding-bottom:7px;
   margin-bottom: 20px;
 }
@@ -41,7 +47,7 @@ body {
 }
 .stateName{
   font-size: 18px;
-  color: #585858;
+  color: white;
 }
 .dataSet {
   margin-bottom: 20px;
@@ -53,7 +59,7 @@ body {
   align-items:flex-end;
   font-size: 18px;
   padding-bottom: 7px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #6DB3EF;
 }
 .headerSource {
   font-size: 12px;
@@ -72,7 +78,7 @@ body {
 }
 .byLine, a {
   clear: both;
-  color: DimGray;
+  color: white;
   font-size: 10px;
 }
 .sourceWrapper {
@@ -82,7 +88,7 @@ body {
   align-content: center;
 }
 .footnote {
-  color: #555;
+  color:white;
   font-size: 12px;
 }
 .dataWrapper{
@@ -102,8 +108,8 @@ body {
   width: 30px;
   height: inherit;
   text-align: center;
-align-items: center;
-display: flex;
+  align-items: center;
+  display: flex;
   transition: opacity 250ms;
 }
 .rangeWrapper:hover {
@@ -130,7 +136,7 @@ display: flex;
   height: 200px;
   align-items: center;
   justify-content: center;
-  color: dimgray;
+  color: white;
 }
 .noData {
   font-size: 14px;
