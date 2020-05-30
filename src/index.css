@@ -68,9 +68,7 @@ body {
   font-size: 14px;
   margin-top: 10px;
   cursor: pointer;
-}
-.dataName {
-  font-weight: bold;
+  transition: opacity 0.25s;
 }
 .dataValue {
   font-weight: thin;

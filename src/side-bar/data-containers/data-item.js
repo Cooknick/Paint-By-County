@@ -1,20 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import _ from 'lodash';
 import { selectData } from '../../ducks';
 import { connect } from 'react-redux';
 
 function DataItem({ name, value, selectedData, selectData }) {
-
-    let isActive;
+    const [isActive, setActive] = useState(true)
 
     useEffect(() => {
-        isActive = selectedData[0] === name ? 'active' : 'inactive'
+        if (selectedData[0] === name) {
+            setActive(true)
+        }
+        else {
+            setActive(false)
+        }
     }, [selectedData])
 
-
     return (
-        <div onClick={() => selectData([name])} className={`dataItem ${isActive}`}>
-            <span className="dataName">{name}: </span> 
+        <div onClick={() => selectData([name])} className={`dataItem ${isActive ? 'active' : 'inactive'}`}>
+            <span className="dataName">{name}: </span>
             <span className="dataValue">{value}</span>
         </div>
     )
