@@ -2,6 +2,9 @@
 
 Paint By County is a interactive look at data by county in the United States.
 
+[Paint By County UI](https://github.com/Cooknick/Paint-By-County)
+[Paint By County API](https://github.com/Cooknick/Paint-By-County-API)
+
 ### Installation
 Fork, clone, `npm i`
 
