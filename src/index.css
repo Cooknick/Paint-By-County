@@ -1,17 +1,25 @@
 body {
+  background-color: #041045;
   margin: 0;
   font-family: proxima-nova, sans-serif;
   color: white;
-  background-color: #041045;
 }
-.App {
+.disclaimer{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
 .usMap {
-  flex: 3;
+  flex: 1;
 }
 .mappedCounty{
   cursor: pointer;
@@ -22,15 +30,13 @@ body {
 }
 .sidebar {
   padding: 30px;
-  margin-right: 30px;
+  margin: 20px 0px;
   flex: 1;
   height: auto;
   background: #0B1C69;
   border: 1px solid #314080;
   box-shadow: 0 0 30px rgba(47, 69, 160, 0.44);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 80%;
 }
 .siteHeader {
   font-size: 24px;
@@ -52,7 +58,6 @@ body {
 .dataSet {
   margin-bottom: 20px;
 }
-
 .dataSetHeader {
   display: flex;
   flex-direction: row;
@@ -104,7 +109,7 @@ body {
   position: relative;
   align-items: center;
   flex-direction: column;
-  width: 30px;
+  width: 10%;
   height: inherit;
   text-align: center;
   align-items: center;
@@ -149,4 +154,19 @@ body {
 }
 .inactive {
   opacity: 0.5;
+}
+
+@media only screen and (min-width: 1300px) {
+
+  .App {
+    flex-direction: row;
+    height: 100vh;
+  }
+  .usMap {
+    flex: 3;
+  }
+  .sidebar {
+    margin-right: 30px;
+  }
+
 }

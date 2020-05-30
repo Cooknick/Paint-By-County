@@ -1,43 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import { connect } from 'react-redux'
+import React, { useState } from 'react';
 
-import axios from 'axios';
+import DesktopWrapper from './desktop';
 
-import { setGuide } from './ducks';
-import USMap from './us-map';
-import SideBar from './side-bar/index';
+const MobileWrapper = () => (
+  <div className="disclaimer">
+    <span>This application is best suited for desktop.</span>
+  </div>
+)
 
-const App = ({ setGuide }) => {
-  const [countyList, setCountyList] = useState(undefined);
+export default function App(){
+  const [browserWidth, setBrowserWidth] = useState(window.innerWidth);
 
-  async function fetchData() {
-    const response = await axios(process.env.REACT_APP_PAINT_BY_COUNTY_API);
-    await setGuide(response.data.dataGuide);
-    setCountyList(response.data.dataSet);
+  function updateSize() {
+    let width = window.innerWidth || document.body.clientWidth;
+    setBrowserWidth(width);
   }
 
-  useEffect(() => {
-    fetchData();
-  }, [])
+  window.addEventListener('resize', updateSize);
 
   return (
     <div>
-      {countyList ?
-        <div className="App">
-          <USMap countyList={countyList} />
-          <SideBar />
-        </div>
-        :
-        <div className="App">
-          <span>Loading...</span>
-        </div>
-      }
+      {browserWidth > 1000 ? <DesktopWrapper /> : <MobileWrapper />}
     </div>
   );
 }
-
-const mapDispatchToProps = dispatch => ({
-  setGuide: county => dispatch(setGuide(county)),
-})
-
-export default connect(null, mapDispatchToProps)(App)
