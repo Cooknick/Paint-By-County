@@ -23,7 +23,6 @@ body {
 }
 .mappedCounty{
   cursor: pointer;
-  box-shadow: 0 0 30px rgba(47, 69, 160, 0.44);
 }
 .mappedCounty:hover {
   fill: white !important;
