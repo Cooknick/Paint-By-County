@@ -18,7 +18,7 @@ You will need both the UI (this) and [API](https://github.com/Cooknick/Paint-By-
 4. `npm start`
 5. Open `localhost:3000` in your browser of choice.
 
-#### Intalling Paint By County - UI
+#### Intalling Paint By County - API
 1. Fork [Paint By County API](https://github.com/Cooknick/Paint-By-County-API), clone, `npm i`
 2. Open your Paint By County API directory
 3. `npm run start:dev`
