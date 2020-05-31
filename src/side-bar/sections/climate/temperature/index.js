@@ -37,7 +37,6 @@ const Temperature = ({ tempSet, selectData, selectedData }) => {
         <div className="tempRange">
             <div className="placeholderOverlay">
                 <div className="noData">No Data Available</div>
-                <div className="contributeToData"><a href="http://github.com">Contribute to Our Data</a></div>
             </div>
         </div>
     )
