@@ -4,13 +4,13 @@
   "author": "Mike Cooknick",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.27.2",
     "lodash": "^4.17.15",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-redux": "^7.2.0",
-    "react-scripts": "3.4.1",
-    "react-test-renderer": "^16.13.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-redux": "^8.0.1",
+    "react-scripts": "^5.0.1",
+    "react-test-renderer": "^18.1.0",
     "redux": "^4.0.5",
     "styled-components": "^5.1.0"
   },
@@ -36,7 +36,7 @@
     ]
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
+    "dotenv": "^16.0.0",
     "netlify-cli": "^10.1.0"
   }
 }
