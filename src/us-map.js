@@ -6,26 +6,28 @@ import colorizeCounties from './colorize';
 import { stateBorders } from './state-borders';
 import { hoverCounty, lockCounty } from './ducks';
 
+async function recolorMap({ countyList, guide, selectedData, setAllCounties }) {
+  const freshCounties = await colorizeCounties(countyList, guide, selectedData);
+  setAllCounties(freshCounties);
+}
+
 function USMap({ hoverCounty, lockCounty, lockedCounty, countyList, guide, selectedData }) {
   const [allCounties, setAllCounties] = useState(countyList);
 
-  async function recolorMap() {
-    const freshCounties = await colorizeCounties(countyList, guide, selectedData);
-    setAllCounties(freshCounties);
-  }
 
-  function toggleLocked(county){
-    if(county.fips === lockedCounty.fips){
+
+  function toggleLocked(county) {
+    if (county.fips === lockedCounty.fips) {
       lockCounty(undefined);
     } else {
       lockCounty(county)
     }
-    
+
   }
 
   useEffect(() => {
-    recolorMap();
-  }, [selectedData])
+    recolorMap({ countyList, guide, selectedData, setAllCounties });
+  }, [countyList, guide, selectedData, setAllCounties])
 
   return (
     <div className="usMap">

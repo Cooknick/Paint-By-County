@@ -13,7 +13,7 @@ function DataItem({ name, value, selectedData, selectData }) {
         else {
             setActive(false)
         }
-    }, [selectedData])
+    }, [selectedData, name, setActive])
 
     return (
         <div onClick={() => selectData([name])} className={`dataItem ${isActive ? 'active' : 'inactive'}`}>

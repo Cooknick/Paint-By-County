@@ -20,18 +20,20 @@ const LoadingWrapper = () => (
   </div>
 )
 
+async function fetchData(setGuide, setCountyList) {
+  const response = await axios(process.env.REACT_APP_PAINT_BY_COUNTY_API);
+  await setGuide(response.data.dataGuide);
+  setCountyList(response.data.dataSet);
+}
+
 const DesktopWrapper = ({ setGuide }) => {
   const [countyList, setCountyList] = useState(undefined);
 
-  async function fetchData() {
-    const response = await axios(process.env.REACT_APP_PAINT_BY_COUNTY_API);
-    await setGuide(response.data.dataGuide);
-    setCountyList(response.data.dataSet);
-  }
+
 
   useEffect(() => {
-    fetchData();
-  }, [])
+    fetchData(setGuide, setCountyList);
+  }, [setGuide, setCountyList])
 
   return (
     <div>
