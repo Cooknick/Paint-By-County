@@ -12,6 +12,7 @@ You will need both the UI (this) and [API](https://github.com/Cooknick/Paint-By-
 ### Installing
 
 #### Intalling Paint By County - UI
+
 1. Fork, clone, `npm i`
 2. Open cloned directory
 3. Set up environment variable `REACT_APP_PAINT_BY_COUNTY_API=http://localhost:8080/all`
@@ -19,6 +20,7 @@ You will need both the UI (this) and [API](https://github.com/Cooknick/Paint-By-
 5. Open `localhost:3000` in your browser of choice.
 
 #### Intalling Paint By County - API
+
 1. Fork [Paint By County API](https://github.com/Cooknick/Paint-By-County-API), clone, `npm i`
 2. Open your Paint By County API directory
 3. `npm run start:dev`
@@ -33,6 +35,7 @@ You will need both the UI (this) and [API](https://github.com/Cooknick/Paint-By-
 * [**Mike Cooknick**](http://twitter.com/mikecooknick) - *Initial work*
 
 ## Acknowledgments
+
 * [Map Source](https://commons.wikimedia.org/wiki/File:Usa_counties_large.svg)
-* [United States Census Bureau](https://www.census.gov/) _This product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau._
+* [United States Census Bureau](https://www.census.gov/) *This product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau.*
 * [NOAA/NCEI](https://www.ncei.noaa.gov/)
